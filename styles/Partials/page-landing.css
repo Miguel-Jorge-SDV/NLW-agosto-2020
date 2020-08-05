@@ -7,11 +7,12 @@
 }
 
 .logo-container img {
-    height: 10rem;
+    height: 12rem;
 }
 
 .logo-container {
     text-align: center;
+    margin-bottom: 3.2rem;
 }
 
 .logo-container h2 {
@@ -23,14 +24,14 @@
 
 .hero-image {
     width: 90%;
-    display: flex;
-    justify-content: center;
+    /*display: flex;
+    justify-content: center;*/    
 }
 
 .buttons-container {
     display: flex;
     justify-content: center;
-    margin: 3.2rem 0;
+    margin: 3.2rem /*0*/;
 }
 
 .buttons-container a {
@@ -71,7 +72,7 @@
     margin-right: 0;
 }
 
-.buttons-container a.give-class:hover {
+.buttons-container a.give-classes:hover {
     background: var(--color-secondary-dark);
 }
 
@@ -102,7 +103,7 @@
         "proffy image image"
         "button button texting";
         column-gap: 87px;
-        row-gap: 86px;
+        /*row-gap: 86px;*/
     }
 
     .logo-container {
@@ -119,7 +120,7 @@
 
     .hero-image {
         grid-area: image;
-        height: 350px;
+        /*height: 350px;*/
     }
 
     .buttons-container {

@@ -5,7 +5,6 @@
 
 .page-header {
     background-color: var(--color-primary);
-
     display: flex;
     flex-direction: column;
 }
@@ -13,11 +12,9 @@
 .page-header .top-bar-container {
     width: 90%;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 1.6rem 0;
 }
 
@@ -31,12 +28,13 @@
 }
 
 .page-header .top-bar-container img {
-    height: 1.6rem;
+    height: 2.6rem;
 }
 
 .page-header .header-content {
     width: 90%;
     margin: 3.2rem auto;
+    position: relative;
 }
 
 .page-header .header-content strong {
@@ -45,11 +43,11 @@
     color: var(--color-title-in-primary);
 }
 
-#search-teacher {
+#search-teachers {
     margin-top: 3.2rem;
 }
 
-#search-teacher label {
+#search-teachers label {
     color: var(--color-title-in-primary);
 }
 
@@ -66,13 +64,10 @@
     border-radius: .8rem;
     cursor: pointer;
     font: 700 1.6rem Archivo;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     text-decoration: none;
-
     transition: background 0.2s;
     margin-top: 3.2rem;
 }
@@ -100,6 +95,10 @@
     font: 1.6rem Archivo;
 }
 
+.input-block{
+    position: relative;
+}
+
 .input-block:focus-within::after{
     content: "";
 
@@ -108,19 +107,19 @@
     background: var(--color-primary-light);
     position: absolute;
     left: 1.6rem;
-    right: 1.6rem;
-    bottom: 50em;
+    /*right: 1.6rem;*/
+    bottom: 0px;
 }
 
 #page-study main {
     margin: 3.2ram auto;
     width: 90%;
 }
-.
+
 .teacher-item {
     background-color: var(--color-box-base);
     border: 1px solid var(--color-line-in-white);
-    border-radius: .8rem;
+    border-radius: 9.9rem;
     margin-top: 2.4rem;
 }
 
@@ -129,6 +128,7 @@
     display: flex;
     align-items: center;
 }
+
 .teacher-item img {
     width: 8rem;
     height: 8rem;
@@ -148,20 +148,21 @@
 .teacher-item header div span {
     font-size: 1.6rem;
     display: block;
-    margin-top: .4rem;
+    margin-top: 0.4rem;
 }
 
 .teacher-item > p {
-    padding: 0.2rem;
+    padding: 0 2rem;
     font-size: 1.6rem;
     line-height: 2.8rem;
 }
 
 .teacher-item footer {
     padding: 3.2rem 2rem;
-    background: var(--color-box-footer);
+    background-color: var(--color-box-footer);
     border-top: 1px solid var(--color-line-in-white);
     display: flex;
+    margin-top: 3.2rem;
     align-items: center;
     justify-content: space-around;
 }
@@ -179,12 +180,12 @@
 }
 
 .teacher-item footer button {
-    width: 20px;
-    height: 5.6;
+    width: 20rem;
+    height: 5.6rem;
     background: var(--color-secondary);
     color: var(--color-button-text);
     border: 0;
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     cursor: pointer;
     font: 700 1.4rem Archivo;
 
@@ -226,7 +227,9 @@
         justify-content: center;
     }
 
-    .page-header
+    .page-header .header-content strong {
+        max-width: 350px;
+    }
 
     .teacher-item header,
     .teacher-item footer{
@@ -238,7 +241,7 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 16px;
         position: absolute;
-
+        bottom: -28px;
     }
 
     #page-study main {
@@ -248,10 +251,10 @@
     }
 
     #search-teachers .select-block{
-        margin-bottom: o;
+        margin-bottom: 0;
     }
 
-    .teacher-item p {
+    .teacher-item > p {
         padding: 0 32px;
     }
 
@@ -262,7 +265,7 @@
 
     .teacher-item footer button{
         width: 245px;
-        font-size: 16px;
+        font-synthesis: 16px;
         justify-content: center;
     }
     .teacher-item footer button img{
